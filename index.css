@@ -12,7 +12,7 @@ html {
   /* variables de colores */
   /* HSL (hue, saturacion, lightness (brillo)*/
   --hue: 162;
-  --primer-color: hsl(var(--hue), 100%, 40%);
+  --primer-color: hsl(var(--hue), 100%, 45%);
   --primer-color-alt: hsl(var(--hue), 56%, 35%);
   --title-color: hsl(228, 8%, 95%);
   --text-color: hsl(228, 8%, 65%);
@@ -250,4 +250,193 @@ svg {
 }
 .button:hover {
     box-shadow: 0 8px 24px hsla(var(--hue) 100%, 40%, .25);
+}
+/* about */
+.aboutContainer {
+  row-gap: 2.5rem;
+}
+.aboutData {
+  text-align: center;
+}
+.aboutDescription {
+  margin-bottom: 2rem;
+}
+.aboutImage {
+  justify-self: center;
+}
+.aboutBlob {
+  width: 320px;
+}
+.aboutBlob path {
+  stroke: var(--primer-color);
+}
+/* agregar efecto blur al header*/
+.blurHeader {
+  background-color: transparent;
+}
+.blurHeader::after {
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(0,0%, 10%, .3);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+/*Skills*/
+.skills {
+  background-color: var(--container-color);
+}
+.skillsContainer {
+  padding-bottom: 2rem;
+  row-gap: 3.5rem;
+}
+.skillsData {
+  text-align: center;
+}
+.skillsDescription {
+  margin-bottom: 2rem;
+}
+.skillsContent, .skillsGroup {
+  display: grid;
+}
+.skillsContent {
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 4rem;
+  justify-content: center;
+  align-items: baseline;
+}
+.skillsGroup {
+  row-gap: 1rem;
+  list-style: decimal-leading-zero;
+}
+.skillsItem {
+  font-weight: var(--font-medium);
+  color: var(--title-color);
+}
+.skillsItem::marker {
+  color: var(--primer-color);
+}
+/* services */
+.servicesContainer {
+  row-gap: 2rem;
+  padding-block: 1rem;
+}
+.servicesCard {
+  text-align: center;
+  background-color: var(--container-color);
+  padding: 3rem 1.25rem;
+  border-radius: 1rem;
+  border: 2px solid var(--container-color);
+  transition: border 4.s;
+}
+.servicesCard:hover{
+  border: 2px solid var(--primer-color);
+}
+.serviceIcon {
+  display: block;
+  font-size: 4rem;
+  color: var(--primer-color);
+  margin-bottom: .75rem;
+}
+.servicesTitle {
+  font-size: var(--h2-fs);
+  margin-bottom: 1.5rem;
+}
+/* projects */
+.projects {
+  background-color: var(--container-color);
+}
+.projectsContainer {
+  row-gap: 2rem;
+  justify-content: center;
+  padding-block: 1rem;
+}
+.projectsCard {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.projectsImg {
+  width: 100%;
+  height: 100%;
+}
+.projectsModal {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, hsla(0,0%,0%,0) 0%, hsla(var(--hue), 70%, 40%, .8) 120%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: bottom .4s;
+}
+.projectsSubtitle, .projectsButton {
+  color: var(--title-color);
+  font-size: var(--small-fs);
+}
+.projectsSubtitle {
+  display: block;
+  margin-bottom: .25rem;
+}
+.projectsTitle {
+  font-size: var(--h2-fs);
+  margin-bottom: .75rem;
+}
+.projectsButton {
+  display: flex;
+  align-items: center;
+  column-gap: .5rem;
+  font-weight: var(--font-medium);
+}
+.projectsButton i {
+  font-size: 1.25rem;
+}
+.projectsCard:hover .projectsModal {
+  bottom: 0;
+}
+/* Contact */
+.contactContainer {
+  padding-top: 1rem;
+}
+.contactForm, .contactGroup{
+  display: grid;
+  row-gap: 1rem;
+}
+.contactForm {
+  position: relative;
+}
+.inputContact {
+  padding: 1rem 1.25rem;
+  border-radius: .5rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+.contactInput::placeholder {
+  color: var(--text-color);
+}
+.contactForm textarea {
+  height: 11rem;
+  resize: none;
+  margin-bottom: 2rem;
+}
+.contactButton {
+  justify-self: center;
+  cursor: pointer;
+}
+.contactMessage {
+  position: absolute;
+  left: 0;
+  bottom: 4.5rem;
+  font-size: var(--small-fs);
+  color: var(--title-color);
 }
