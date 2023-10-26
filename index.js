@@ -50,4 +50,32 @@ const enviarEmail = (e) => {
     })
 }
 
-contactForm.addEventListener('submit', enviarEmail)
+contactForm.addEventListener('submit', enviarEmail);
+
+//mostrar boton scrollUp
+const scrollUp = () => {
+    const scrollUp = document.querySelector('#scrollUp')
+    this.scrollY >= 350 ? scrollUp.classList.add('showScroll') : scrollUp.classList.remove('showScroll')
+}
+window.addEventListener('scroll', scrollUp)
+
+// scroll sections active link
+const sections = document.querySelectorAll('section[id]');
+
+const scrollActive = () => {
+    const scrollY = window.scrollY
+    
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,//toma la altura total de cada seccion
+        sectionTop = current.offsetTop - 58,//toma la distancia desde el border superior de la seccion hasta el borde superior del contenido dentro de la seccion y le resta 58px (58px que se obtienen de restar 80px de padding superior en cada seccion con 32px de padding inferior de la seccion anterior )
+        sectionId = current.getAttribute('id'),//toma el id de cada seccion iterada
+        sectionClass = document.querySelector('.navMenu a[href*=' + sectionId + ']')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            sectionClass.classList.add('activeLink')
+        }else{
+            sectionClass.classList.remove('activeLink')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)

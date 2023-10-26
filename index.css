@@ -180,6 +180,10 @@ svg {
 .showMenu {
     right: 0;
 }
+/*Active Link*/
+.activeLink {
+  color: var(--primer-color);
+}
 /* Home */
 .home {
     background-color: var(--container-color);
@@ -480,4 +484,37 @@ svg {
 .footerCopy {
   font-size: var(--smaller-fs);
   margin-top: 2rem;
+}
+/* scrollbar */
+::-webkit-scrollbar {
+  width: .5rem;
+  border-radius: .5rem !important;
+  background-color: hsl(228, 12%, 25%);
+}
+::-webkit-scrollbar-thumb{
+  background-color: hsl(228, 8%, 35%);
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(228, 12%, 45%);
+}
+/* scrollUp */
+.scrollUp {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--body-color);
+  color: var(--primer-color);
+  border-radius: .25rem;
+  padding: 6px;
+  display: inline-flex;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px hsla(228, 15%, 8%, .4);
+  z-index: var(--z-tooltip);
+  transition: bottom .4s, transform .4s;
+}
+.scrollUp:hover {
+  transform: translateY(-.25rem);
+}
+.showScroll {
+  bottom: 3rem;
 }
