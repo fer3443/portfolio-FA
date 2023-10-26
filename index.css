@@ -238,11 +238,10 @@ svg {
     filter: drop-shadow(0 12px 12px hsla(var(--hue) 100%, 40%, .2));
 }
 /*estilo para ajustar la imagen*/
-/* .homeImg {
-    width: 100px;
-    transform: translateX();
-    transform: translateY();
-} */
+.homeImg, .aboutImg {
+    width: 600px;
+    transform: translateY(5%);
+}
 .button {
     display: inline-block;
     background-color: var(--primer-color);
@@ -517,4 +516,38 @@ svg {
 }
 .showScroll {
   bottom: 3rem;
+}
+/* Breakpoints */
+@media screen and (max-width: 320px) {
+  .container {
+    margin-inline: 1rem;
+  }
+  .skillsContent {
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+  .servicesCard {
+    padding-block: 1.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .homeContainer, .aboutContainer, .skillsContainer, .servicesContainer, .projectsContainer, .contactContainer {
+    grid-template-columns: 360px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navMenu {
+    width: 55%;
+  }
+  .homeContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .homeData {
+    text-align: initial;
+  }
+  .homeSocial {
+    justify-content: initial;
+  }
+ 
 }
