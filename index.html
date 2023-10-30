@@ -13,14 +13,15 @@
       rel="stylesheet"
     />
     <!--Remixicon-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body class="">
     <header class="header" id="header">
       <nav class="nav container">
-        <a href="#" class="navLogo">
-          Fernando <span>Arroyo R.</span>
-        </a>
+        <a href="#" class="navLogo"> Fernando <span>Arroyo R.</span> </a>
         <div class="navMenu" id="navMenu">
           <ul class="navList">
             <li class="navItem">
@@ -38,8 +39,16 @@
             <li class="navItem">
               <a href="#contact" class="navLink">Contacto</a>
             </li>
+            <div class="buttonsTheme">
+              <div class="navSun" id="navSun">
+                <i class="ri-sun-fill"></i>
+              </div>
+              <div class="navMoon hiddenBtn" id="navMoon">
+                <i class="ri-moon-line"></i>
+              </div>
+            </div>
           </ul>
-
+          
           <div class="navClose" id="navClose">
             <i class="ri-close-fill"></i>
           </div>
@@ -54,13 +63,13 @@
         <div class="homeContainer container grid">
           <div class="homeContent">
             <div class="homeData">
-              <h3 class="homeSubtitle">
-                Hola, <span>soy</span>
-              </h3>
+              <h3 class="homeSubtitle">Hola, <span>soy</span></h3>
               <h1 class="homeTitle">Fernando Arroyo R.</h1>
               <h3 class="homeEducation">Full Stack Developer</h3>
               <p class="homeDescription">
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci veritatis corporis alias quidem corrupti dolor laborum quae iusto dignissimos rerum!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Adipisci veritatis corporis alias quidem corrupti dolor laborum
+                quae iusto dignissimos rerum!
               </p>
               <a href="#contact" class="button">hablemos!</a>
             </div>
@@ -77,39 +86,69 @@
             </div>
           </div>
           <div class="homeImage">
-            <svg class="homeBlob" viewBox="0 0 550 591" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="homeBlob"
+              viewBox="0 0 550 591"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <mask id="maskBlob" mask-type="alpha">
-                 <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
                  170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
                  447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
                  587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
+                 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
               </mask>
               <g mask="url(#maskBlob)">
-                 <path d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
+                <path
+                  d="M263 47.1782C270.426 42.891 279.574 42.891 287 47.1782L501.157 
                  170.822C508.583 175.109 513.157 183.032 513.157 191.606V438.894C513.157 
                  447.468 508.583 455.391 501.157 459.678L287 583.322C279.574 587.609 270.426 
                  587.609 263 583.322L48.843 459.678C41.4174 455.391 36.843 447.468 36.843 
-                 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"/>
-           
-                 <rect x="37" width="476" height="630" fill="url(#pattern0)"/>
+                 438.894V191.606C36.843 183.032 41.4174 175.109 48.843 170.822L263 47.1782Z"
+                />
+
+                <rect x="37" width="476" height="630" fill="url(#pattern0)" />
               </g>
-           
-              <rect x="37" width="476" height="300" fill="url(#pattern1)"/>
-           
+
+              <rect x="37" width="476" height="300" fill="url(#pattern1)" />
+
               <defs>
-                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
-                 </pattern>
-           
-                 <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use href="#imageBlob" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
-                 </pattern>
-           
-                 <!-- Insert your profile (recommended size: 640 x 940) -->
-                 <image class="homeImg" id="imageBlob" width="640" height="925" href="/assets/img/imagenPrueba2.png"/>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
+
+                <pattern
+                  id="pattern1"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBlob"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
+
+                <!-- Insert your profile (recommended size: 640 x 940) -->
+                <image
+                  class="homeImg"
+                  id="imageBlob"
+                  width="640"
+                  height="925"
+                  href="/assets/img/imagenPrueba2.png"
+                />
               </defs>
-           </svg>
+            </svg>
           </div>
         </div>
       </section>
@@ -117,51 +156,81 @@
       <section class="about section" id="about">
         <div class="aboutContainer container grid">
           <div class="aboutData">
-            <h3 class="sectionSubtitle">
-              My <span>Intro</span>
-            </h3>
-            <h2 class="sectionTitle">
-              About me
-            </h2>
+            <h3 class="sectionSubtitle">Mi <span>Intro</span></h3>
+            <h2 class="sectionTitle">Acerca de mi</h2>
             <p class="aboutDescription">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis tempora rem perspiciatis, minima ad tenetur? Nulla nisi quibusdam molestiae tempora?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis tempora rem perspiciatis, minima ad tenetur? Nulla nisi
+              quibusdam molestiae tempora?
             </p>
-            <a href="#contact" class="button">
-              Contactame
-            </a>
+            <a href="#contact" class="button"> Contactame </a>
           </div>
           <div class="aboutImage">
-            <svg class="aboutBlob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              class="aboutBlob"
+              viewBox="0 0 550 592"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <mask id="maskBorder" mask-type="alpha">
-                 <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
+                <path
+                  d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
                  171.822C508.583 176.109 513.157 184.032 513.157 192.606V439.894C513.157 
                  448.468 508.583 456.391 501.157 460.678L287 584.322C279.574 588.609 
                  270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
-                 439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black"/>
+                 439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z"
+                  fill="black"
+                />
               </mask>
               <g mask="url(#maskBorder)">
-                 <rect x="37" width="476" height="630" fill="url(#pattern2)"/>
-                 
-                 <path d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
+                <rect x="37" width="476" height="630" fill="url(#pattern2)" />
+
+                <path
+                  d="M285 51.6423L499.157 175.286C505.345 178.859 509.157 185.461 509.157 
                  192.606V439.894C509.157 447.039 505.345 453.641 499.157 457.214L285 
                  580.858C278.812 584.43 271.188 584.43 265 580.858L50.843 457.214C44.655 453.641 
                  40.843 447.039 40.843 439.894V192.606C40.843 185.461 44.655 178.859 50.843 
-                 175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z" stroke="black" stroke-width="10"/>
+                 175.286L265 51.6423C271.188 48.0697 278.812 48.0696 285 51.6423Z"
+                  stroke="black"
+                  stroke-width="10"
+                />
               </g>
-           
-              <rect x="37" width="476" height="300" fill="url(#pattern3)"/>
-           
+
+              <rect x="37" width="476" height="300" fill="url(#pattern3)" />
+
               <defs>
-                 <pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"/>
-                 </pattern>
-           
-                 <pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use href="#imageBorder" transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"/>
-                 </pattern>
-                 <image class="aboutImg" id="imageBorder" width="640" height="940" href="/assets/img/imagenPrueba2.png"/>
+                <pattern
+                  id="pattern2"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00108108 0.0404062 0)"
+                  />
+                </pattern>
+
+                <pattern
+                  id="pattern3"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    href="#imageBorder"
+                    transform="matrix(0.00143057 0 0 0.00226984 0.0404062 0)"
+                  />
+                </pattern>
+                <image
+                  class="aboutImg"
+                  id="imageBorder"
+                  width="640"
+                  height="940"
+                  href="/assets/img/laptop.png"
+                />
               </defs>
-           </svg>
+            </svg>
           </div>
         </div>
       </section>
@@ -169,14 +238,12 @@
       <section class="skills section">
         <div class="skillsContainer container grid">
           <div class="skillsData">
-            <h3 class="sectionSubtitle">
-              Favorite <span>Skills</span>
-            </h3>
-            <h2 class="sectionTitle">
-              My Skils
-            </h2>
+            <h3 class="sectionSubtitle">Habilidades <span>Favoritas</span></h3>
+            <h2 class="sectionTitle">Mis Habilidades</h2>
             <p class="skillsDescription">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo magnam ea nesciunt ut perferendis quidem alias deserunt aut excepturi aliquam?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Explicabo magnam ea nesciunt ut perferendis quidem alias deserunt
+              aut excepturi aliquam?
             </p>
             <a href="#projects" class="button">Ver más</a>
           </div>
@@ -198,108 +265,162 @@
       </section>
 
       <section class="services section" id="services">
-        <h3 class="sectionSubtitle">
-          My <span>services</span>
-        </h3>
-        <h2 class="sectionTitle">
-          What I Do
-        </h2>
+        <h3 class="sectionSubtitle">Mi <span>servicios</span></h3>
+        <h2 class="sectionTitle">Que puedo hacer</h2>
         <div class="servicesContainer container grid">
           <article class="servicesCard">
             <i class="ri-layout-5-line serviceIcon"></i>
-            <h2 class="servicesTitle">Web Developer</h2>
-            <p class="servicesDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, optio! Veritatis nobis nemo assumenda nihil!</p>
+            <h2 class="servicesTitle">Desarrollado Web</h2>
+            <p class="servicesDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+              optio! Veritatis nobis nemo assumenda nihil!
+            </p>
           </article>
 
           <article class="servicesCard">
             <i class="ri-service-fill serviceIcon"></i>
-            <h2 class="servicesTitle">Design</h2>
-            <p class="servicesDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur eum perferendis laborum aspernatur beatae dolorem?</p>
+            <h2 class="servicesTitle">Diseño</h2>
+            <p class="servicesDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur eum perferendis laborum aspernatur beatae dolorem?
+            </p>
           </article>
 
           <article class="servicesCard">
             <i class="ri-pencil-ruler-fill serviceIcon"></i>
-            <h2 class="servicesTitle">I can adapt</h2>
-            <p class="servicesDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem corrupti eos iure id consequatur?</p>
+            <h2 class="servicesTitle">Puedo adaptarme</h2>
+            <p class="servicesDescription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+              voluptatem corrupti eos iure id consequatur?
+            </p>
           </article>
         </div>
       </section>
 
       <section class="projects section" id="projects">
-        <h3 class="sectionSubtitle">
-          My <span>Jobs</span>
-        </h3>
-        <h2 class="sectionTitle">
-          Recent Projects
-        </h2>
+        <h3 class="sectionSubtitle">Mis <span>Trabajos</span></h3>
+        <h2 class="sectionTitle">Proyectos Recientes</h2>
 
         <div class="projectsContainer container grid">
           <article class="projectsCard">
-            <img src="/assets/img/imagenPrueba.jpg" alt="imagen de prueba" class="projectsImg">
+            <img
+              src="/assets/img/imagenPrueba.jpg"
+              alt="imagen de prueba"
+              class="projectsImg"
+            />
             <div class="projectsModal">
               <span class="projectsSubtitle">Web</span>
               <h2 class="projectsTitle">Consumo de Api</h2>
-              <a href="#" class="projectsButton">View demo <i class="ri-external-link-line"></i></a>
+              <a href="#" class="projectsButton"
+                >View demo <i class="ri-external-link-line"></i
+              ></a>
             </div>
           </article>
           <article class="projectsCard">
-            <img src="/assets/img/imagenPrueba.jpg" alt="imagen de prueba" class="projectsImg">
+            <img
+              src="/assets/img/imagenPrueba.jpg"
+              alt="imagen de prueba"
+              class="projectsImg"
+            />
             <div class="projectsModal">
               <span class="projectsSubtitle">Web</span>
               <h2 class="projectsTitle">Consumo de Api</h2>
-              <a href="#" class="projectsButton">View demo <i class="ri-external-link-line"></i></a>
+              <a href="#" class="projectsButton"
+                >View demo <i class="ri-external-link-line"></i
+              ></a>
             </div>
           </article>
           <article class="projectsCard">
-            <img src="/assets/img/imagenPrueba.jpg" alt="imagen de prueba" class="projectsImg">
+            <img
+              src="/assets/img/imagenPrueba.jpg"
+              alt="imagen de prueba"
+              class="projectsImg"
+            />
             <div class="projectsModal">
               <span class="projectsSubtitle">Web</span>
               <h2 class="projectsTitle">Consumo de Api</h2>
-              <a href="#" class="projectsButton">View demo <i class="ri-external-link-line"></i></a>
+              <a href="#" class="projectsButton"
+                >View demo <i class="ri-external-link-line"></i
+              ></a>
             </div>
           </article>
           <article class="projectsCard">
-            <img src="/assets/img/imagenPrueba.jpg" alt="imagen de prueba" class="projectsImg">
+            <img
+              src="/assets/img/imagenPrueba.jpg"
+              alt="imagen de prueba"
+              class="projectsImg"
+            />
             <div class="projectsModal">
               <span class="projectsSubtitle">Web</span>
               <h2 class="projectsTitle">Consumo de Api</h2>
-              <a href="#" class="projectsButton">View demo <i class="ri-external-link-line"></i></a>
+              <a href="#" class="projectsButton"
+                >View demo <i class="ri-external-link-line"></i
+              ></a>
             </div>
           </article>
           <article class="projectsCard">
-            <img src="/assets/img/imagenPrueba.jpg" alt="imagen de prueba" class="projectsImg">
+            <img
+              src="/assets/img/imagenPrueba.jpg"
+              alt="imagen de prueba"
+              class="projectsImg"
+            />
             <div class="projectsModal">
               <span class="projectsSubtitle">Web</span>
               <h2 class="projectsTitle">Consumo de Api</h2>
-              <a href="#" class="projectsButton">View demo <i class="ri-external-link-line"></i></a>
+              <a href="#" class="projectsButton"
+                >View demo <i class="ri-external-link-line"></i
+              ></a>
             </div>
           </article>
           <article class="projectsCard">
-            <img src="/assets/img/imagenPrueba.jpg" alt="imagen de prueba" class="projectsImg">
+            <img
+              src="/assets/img/imagenPrueba.jpg"
+              alt="imagen de prueba"
+              class="projectsImg"
+            />
             <div class="projectsModal">
               <span class="projectsSubtitle">Web</span>
               <h2 class="projectsTitle">Consumo de Api</h2>
-              <a href="#" class="projectsButton">View demo <i class="ri-external-link-line"></i></a>
+              <a href="#" class="projectsButton"
+                >View demo <i class="ri-external-link-line"></i
+              ></a>
             </div>
           </article>
         </div>
       </section>
       <section class="contact section" id="contact">
-        <h3 class="sectionSubtitle">
-          Get In <span>Touch</span>
-        </h3>
-        <h2 class="sectionTitle">
-          Contactame
-        </h2>
+        <h3 class="sectionSubtitle">Ponte en <span>Contacto</span></h3>
+        <h2 class="sectionTitle">Contactame</h2>
         <div class="contactContainer container grid">
           <form class="contactForm" id="contactForm">
             <div class="contactGroup">
-              <input type="text" name="userName" id="" required placeholder="Ingrese su nombre aquí" class="inputContact">
-              <input type="email" name="userMail" id="" required placeholder="Ingrese su email aquí" class="inputContact">
+              <input
+                type="text"
+                name="userName"
+                id=""
+                required
+                placeholder="Ingrese su nombre aquí"
+                class="inputContact"
+              />
+              <input
+                type="email"
+                name="userMail"
+                id=""
+                required
+                placeholder="Ingrese su email aquí"
+                class="inputContact"
+              />
             </div>
-            <textarea name="userProject" required placeholder="Ingrese su mensaje aquí" class="inputContact"></textarea>
+            <textarea
+              name="userProject"
+              required
+              placeholder="Ingrese su mensaje aquí"
+              class="inputContact"
+            ></textarea>
             <p class="contactMessage" id="contactMessage"></p>
-            <button type="submit" class="button contactButton">enviar mensaje</button>
+            <button type="submit" class="button contactButton">
+              enviar mensaje
+            </button>
           </form>
         </div>
       </section>
@@ -307,25 +428,36 @@
     <footer class="footer" id="footer">
       <div class="footerContainer container grid">
         <div>
-          <h1 class="footerTitle">
-            Fernando <span>Arroyo R.</span>
-          </h1>
-          <h2 class="footerEducation">
-            Full Stack Developer
-          </h2>
+          <h1 class="footerTitle">Fernando <span>Arroyo R.</span></h1>
+          <h2 class="footerEducation">Full Stack Developer</h2>
         </div>
-      
-      <div class="footerSocial">
-        <a href="https://www.instagram.com/ferchoar23/" target="_blank" class="footerSocialLink"><i class="ri-instagram-line"></i></a>
 
-        <a href="https://www.facebook.com/fernando.arroyorodriguez.9/" target="_blank" class="footerSocialLink"><i class="ri-facebook-circle-fill"></i></a>
+        <div class="footerSocial">
+          <a
+            href="https://www.instagram.com/ferchoar23/"
+            target="_blank"
+            class="footerSocialLink"
+            ><i class="ri-instagram-line"></i
+          ></a>
 
-        <a href="https://www.twitter.com" target="_blank" class="footerSocialLink"><i class="ri-twitter-line"></i></a>
+          <a
+            href="https://www.facebook.com/fernando.arroyorodriguez.9/"
+            target="_blank"
+            class="footerSocialLink"
+            ><i class="ri-facebook-circle-fill"></i
+          ></a>
+
+          <a
+            href="https://www.twitter.com"
+            target="_blank"
+            class="footerSocialLink"
+            ><i class="ri-twitter-line"></i
+          ></a>
+        </div>
+        <span class="footerCopy">
+          Desarrollado por Fernando Arroyo Rodriguez.
+        </span>
       </div>
-      <span class="footerCopy">
-        Desarrollado por Fernando Arroyo Rodriguez.
-      </span>
-    </div>
     </footer>
     <!-- boton scroll UP-->
     <a href="#" class="scrollUp" id="scrollUp">

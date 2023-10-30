@@ -22,6 +22,11 @@ html {
   --text-color: hsl(228, 8%, 65%);
   --body-color: hsl(228, 15%, 25%);
   --container-color: hsl(228, 15%, 15%);
+
+  /* ThemeLight */
+  --bg-color: hsl(0, 0%, 95%);
+  --container-tl:hsl(0, 0%, 100%);
+  --title-dark: hsl(0, 0%, 20%);
   /* fuente y tipografia */
   --body-font: "Poppins", sans-serif;
   --biggest-fs: 2rem;
@@ -62,6 +67,10 @@ body {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+}
+body.lightTheme {
+  background-color: var(--bg-color);
+  color: var(--title-dark);
 }
 input,
 textarea,
@@ -119,7 +128,6 @@ svg {
 .main {
   overflow: hidden; /*scrollReveal*/
 }
-
 /* Header y nav */
 .header {
   position: fixed;
@@ -184,6 +192,20 @@ svg {
 .showMenu {
     right: 0;
 }
+.buttonsTheme {
+  display: flex;
+  justify-content: space-between;
+  width: 3rem;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+.navSun:hover,.navMoon:hover {
+  color: var(--primer-color);
+  transition: color .4s;
+}
+.hiddenBtn {
+  display: none;
+}
 /*Active Link*/
 .activeLink {
   color: var(--primer-color);
@@ -242,7 +264,7 @@ svg {
     filter: drop-shadow(0 12px 12px hsla(var(--hue) 100%, 40%, .2));
 }
 /*////estilo para ajustar la imagen////*/
-.homeImg, .aboutImg {
+.homeImg .aboutImg {
     width: 600px;
     transform: translateY(5%);
 }
@@ -690,4 +712,15 @@ svg {
   .scrollUp {
     right: 3rem;
   }
+}
+/* // Tema color //*/
+.bgLight {
+  background-color: var(--container-tl);
+}
+.txtColorDark {
+  color: var(--title-dark);
+}
+.themeLight {
+  background-color: var(--bg-color);
+  color: var(--title-dark)
 }
