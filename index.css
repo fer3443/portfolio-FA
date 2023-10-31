@@ -170,6 +170,9 @@ svg {
         -webkit-backdrop-filter: blur(24px);
         transition: right .4s;
     }
+    .navMenu.dark{
+      background-color: hsla(0,0%, 10%, .8);
+    }
 }
 .navList {
     display: flex;
@@ -302,6 +305,9 @@ svg {
 /* agregar efecto blur al header*/
 .blurHeader {
   background-color: transparent;
+}
+.blurHeader.dark {
+  background-color: hsla(0,0%, 10%, .8);
 }
 .blurHeader::after {
   content: '';

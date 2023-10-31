@@ -2,6 +2,7 @@
 const navMenu = document.querySelector("#navMenu");
 const navToggle = document.querySelector("#navToggle");
 const navClose = document.querySelector("#navClose");
+
 //show menu
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -23,6 +24,7 @@ function linkAction() {
   navMenu.classList.remove("showMenu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction)); //recorro la nodeList creada por querySelectorAll
+
 //efecto blur al header
 function blurHeader() {
   const header = document.querySelector("#header");
@@ -31,7 +33,6 @@ function blurHeader() {
     : header.classList.remove("blurHeader");
 }
 window.addEventListener("scroll", blurHeader);
-
 //cambiar tema de color
 const elementos = {
     navSun: document.querySelector("#navSun"),
@@ -49,13 +50,18 @@ const elementos = {
     footerEducation : document.querySelector(".footerEducation"),
     li : document.querySelectorAll('li'),
     servicesCard: document.querySelectorAll('.servicesCard'),
+    header: document.querySelector('#header')
 }
+
 function addTheme() {
+
   elementos.sectionTitle.forEach((n) => n.classList.toggle("txtColorDark"));
   elementos.sectionSubtitle.forEach((n) => n.classList.toggle("txtColorDark"));
   elementos.li.forEach((n) => n.classList.toggle("txtColorDark"));
   elementos.body.classList.toggle("themeLight");
   elementos.servicesCard.forEach((n) => n.classList.toggle("bgLight"));
+  elementos.header.classList.toggle('dark');
+  navMenu.classList.toggle('dark');
   
   for (const key in elementos) {
     if (key === 'homeSubtitle'|| key === 'homeEducation' || key === 'footerTitle'|| key === 'footerEducation') {
@@ -73,8 +79,10 @@ function addTheme() {
 function handleButtonTheme() {
   navSun.classList.toggle("hiddenBtn"),
     navMoon.classList.toggle("hiddenBtn"),
-    addTheme();
+    addTheme()
 }
+
+
 if (navSun) {
   navSun.addEventListener("click", handleButtonTheme);
 }
